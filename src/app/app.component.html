@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+</div>
+<div>
+  <form #form="ngForm">
+    <input type="text" placeholder="Sample" class="form-control">
+    <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="form.invalid">Submit</button>
+  </form>
+</div>
